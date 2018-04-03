@@ -4,38 +4,97 @@
 <head>
     <title>Responsive Nav</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar collapse" role="navigation">
         <div class="navbar-link navbar-link-brand">
             Title (or Logo)
         </div>
-        <div class="navbar-link navbar-link-toggle">
+        <div class="navbar-link navbar-link-toggle" data-toggle="collapse" href="#navHide">
             <i class="fas fa-bars"></i>
         </div>
-        <nav class="navbar-items">
-        </nav>
-        <nav class="navbar-items navbar-items-right">
-            <div class="navbar-link">
-                First Link
+        <div class="navbar-items navbar-items-right collapse" id="navHide">
+            <div class="navbar-link navbar-link-open">
+            <a href="#one" class="navbar-link">First Link</a>
             </div>
-            <div class="navbar-link">
-                Second Link
+            <div class="navbar-link navbar-link-open">
+                <a href="#two" class="navbar-link">Second Link</a>
             </div>
-            <div class="navbar-link">
-                Third Link
+            <div class="navbar-link navbar-link-open">
+                <a href="#three" class="navbar-link">Third Link</a>
             </div>
-            <div class="navbar-link">
-                Fourth Link
+            <div class="navbar-link navbar-link-open">
+                <a href="#four" class="navbar-link">Fourth Link</a>
             </div>
-        </nav>
+        </div>
     </div>
+
+    <h1>BIG HEADLINE</h1>
+    <section id="one">
+        <h2>ONE</h2>
+        <p>Curabitur volutpat eleifend justo, nec iaculis odio mollis et. Nullam eu posuere nibh, eu bibendum eros. Nullam pulvinar
+            metus magna, id placerat metus consectetur et. Fusce vel mi ex. Aliquam ac interdum purus. Praesent id lacus
+            dignissim, tincidunt turpis vitae, consequat mauris. Phasellus elementum ante blandit aliquet tempor. Morbi non
+            nisi dignissim, tempus dui vel, viverra neque. Pellentesque venenatis vestibulum diam, quis elementum arcu rutrum
+            ac. Praesent vel ante leo. Vivamus scelerisque quis elit at auctor.</p>
+    </section>
+    <section id="two">
+        <h2>TWO</h2>
+        <p>Proin lectus ante, dapibus quis tellus quis, fermentum commodo nulla. Nunc id libero at tellus egestas dapibus. In
+            sed ultrices urna, eget vehicula tortor. Phasellus a erat tempor, molestie magna dignissim, facilisis diam. Aliquam
+            libero nunc, cursus eu ante ut, congue tristique lectus. Integer scelerisque pulvinar aliquet. Vivamus sit amet
+            accumsan elit. Curabitur volutpat lectus nec ipsum facilisis, nec pharetra lorem luctus. Aenean mauris turpis,
+            viverra non molestie eu, rhoncus ut ligula. Aliquam sed ipsum justo. Duis ex sem, blandit a eleifend vulputate,
+            accumsan in diam.</p>
+    </section>
+    <section id="three">
+        <h2>THREE</h2>
+        <p>Quisque felis ante, ultricies non mi at, rutrum posuere lectus. Vivamus tincidunt augue a urna laoreet dignissim.
+            Mauris id feugiat mauris. Vivamus ut arcu eu sem egestas consequat congue at nunc. Proin eu sem odio. Suspendisse
+            potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas
+            augue nisi, facilisis nec metus id, posuere condimentum dui. Vivamus quam mi, scelerisque non accumsan non, tempus
+            ac tellus. Nulla ut diam mauris. Sed aliquet tincidunt orci, id lacinia nulla pellentesque sit amet.</p>
+    </section>
+    <section id="four">
+        <h2>FOUR</h2>
+        <p>Nulla consequat a nisi quis tristique. Duis volutpat ornare erat, in blandit ipsum porttitor ac. In a venenatis velit,
+            eu egestas elit. Integer cursus vestibulum ligula. In auctor velit nisi, consequat eleifend justo elementum sit
+            amet. Nullam efficitur erat euismod, vestibulum neque sit amet, mattis libero. Morbi erat metus, malesuada non
+            lorem non, euismod feugiat orci. Donec tristique, lacus scelerisque tempus feugiat, quam nibh pellentesque purus,
+            ac semper libero massa sit amet nibh. Praesent eu ornare lacus, vitae malesuada erat. Nunc sollicitudin est non
+            tellus facilisis volutpat.</p>
+    </section>
+    <section class="readMore">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Read more >>
+            </button>
+            
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                        Pellentesque posuere vehicula leo, sit amet congue risus iaculis congue. Nam sagittis mauris sit amet quam feugiat, eu efficitur dolor rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis ac ullamcorper ex, sit amet finibus massa. Quisque tincidunt nibh ut condimentum auctor. Mauris non vehicula leo, a feugiat ligula. Cras rutrum felis in tellus mollis porttitor.
+                </div>
+            </div>
+        </section>
+    <footer>
+        <h3>&copy; 2018 Mario</h3>
+    </footer>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
