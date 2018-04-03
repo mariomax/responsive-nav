@@ -5,3 +5,7 @@ function classToggle() {
   }
   document.querySelector('.navbar-link-toggle')
     .addEventListener('click', classToggle);
+
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});

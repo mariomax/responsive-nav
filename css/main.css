@@ -18,9 +18,9 @@ body {
   padding-right: .5rem;
 }
 
-.navbar-items-right {
+/* .navbar-items-right {
   margin-left: auto;
-}
+} */
 
 .navbar-link-toggle {
   display: none;
@@ -29,6 +29,12 @@ body {
 a, a:hover {
   text-decoration: none;
   color: #ffffff;
+}
+ul {
+  margin-bottom: 0;
+}
+li {
+  list-style-type: none;
 }
 
 button {
@@ -45,7 +51,7 @@ button {
   }
 
   .navbar-items-right {
-    margin-left: 0;
+    margin-left: -40px;
     display: none;
   }
   .navbar-link-toggle {
@@ -59,6 +65,10 @@ button {
   }
   .navbar-link-open {
     padding-top: 1rem;
+  }
+
+  .jumpOffset {
+    height: 60px;
   }
 
   h1 {
